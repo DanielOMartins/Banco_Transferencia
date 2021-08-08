@@ -17,6 +17,7 @@
         Lbl_ActualMoney1.Text = "Actual Money"
         Btn_GetMoney1.Text = "Get Money"
         Btn_Deposit1.Text = "Deposit"
+        Btn_Transfer1.Text = "Transfer"
         Grp_Conta1.Text = "1 Count"
 
         Txt_ActualMoney1.ReadOnly = True
@@ -31,6 +32,7 @@
         Lbl_ActualMoney2.Text = "Actual Money"
         Btn_GetMoney2.Text = "Get Money"
         Btn_Deposit2.Text = "Deposit"
+        Btn_Transfer2.Text = "Transfer"
         Grp_Conta2.Text = "2 Count"
 
         Txt_ActualMoney2.ReadOnly = True
@@ -114,4 +116,5 @@
         contaCorrente2.extract += Now.ToString + " Deposit of " + valueDeposit.ToString + " Total money " + contaCorrente2.money.ToString + vbCrLf
         Txt_Extract2.Text = contaCorrente2.extract
     End Sub
+
 End Class

@@ -36,7 +36,9 @@ Partial Class Frm_Main02
         Me.Txt_ActualMoney1 = New System.Windows.Forms.TextBox()
         Me.Txt_Extract1 = New System.Windows.Forms.TextBox()
         Me.Grp_Conta1 = New System.Windows.Forms.GroupBox()
+        Me.Btn_Transfer1 = New System.Windows.Forms.Button()
         Me.Grp_Conta2 = New System.Windows.Forms.GroupBox()
+        Me.Btn_Transfer2 = New System.Windows.Forms.Button()
         Me.Txt_Extract2 = New System.Windows.Forms.TextBox()
         Me.Txt_value2 = New System.Windows.Forms.TextBox()
         Me.Btn_Deposit2 = New System.Windows.Forms.Button()
@@ -64,7 +66,7 @@ Partial Class Frm_Main02
         '
         'Txt_Value1
         '
-        Me.Txt_Value1.Location = New System.Drawing.Point(19, 141)
+        Me.Txt_Value1.Location = New System.Drawing.Point(19, 124)
         Me.Txt_Value1.Name = "Txt_Value1"
         Me.Txt_Value1.Size = New System.Drawing.Size(142, 23)
         Me.Txt_Value1.TabIndex = 1
@@ -72,7 +74,7 @@ Partial Class Frm_Main02
         'Lbl_Value1
         '
         Me.Lbl_Value1.AutoSize = True
-        Me.Lbl_Value1.Location = New System.Drawing.Point(19, 123)
+        Me.Lbl_Value1.Location = New System.Drawing.Point(19, 106)
         Me.Lbl_Value1.Name = "Lbl_Value1"
         Me.Lbl_Value1.Size = New System.Drawing.Size(41, 15)
         Me.Lbl_Value1.TabIndex = 2
@@ -80,7 +82,7 @@ Partial Class Frm_Main02
         '
         'Btn_GetMoney1
         '
-        Me.Btn_GetMoney1.Location = New System.Drawing.Point(19, 170)
+        Me.Btn_GetMoney1.Location = New System.Drawing.Point(19, 153)
         Me.Btn_GetMoney1.Name = "Btn_GetMoney1"
         Me.Btn_GetMoney1.Size = New System.Drawing.Size(142, 23)
         Me.Btn_GetMoney1.TabIndex = 3
@@ -139,7 +141,7 @@ Partial Class Frm_Main02
         '
         'Btn_Deposit1
         '
-        Me.Btn_Deposit1.Location = New System.Drawing.Point(19, 199)
+        Me.Btn_Deposit1.Location = New System.Drawing.Point(19, 182)
         Me.Btn_Deposit1.Name = "Btn_Deposit1"
         Me.Btn_Deposit1.Size = New System.Drawing.Size(142, 23)
         Me.Btn_Deposit1.TabIndex = 11
@@ -164,6 +166,7 @@ Partial Class Frm_Main02
         '
         'Grp_Conta1
         '
+        Me.Grp_Conta1.Controls.Add(Me.Btn_Transfer1)
         Me.Grp_Conta1.Controls.Add(Me.Txt_Extract1)
         Me.Grp_Conta1.Controls.Add(Me.Txt_Value1)
         Me.Grp_Conta1.Controls.Add(Me.Btn_Deposit1)
@@ -176,15 +179,25 @@ Partial Class Frm_Main02
         Me.Grp_Conta1.Controls.Add(Me.Lbl_Money1)
         Me.Grp_Conta1.Controls.Add(Me.Lbl_Result1)
         Me.Grp_Conta1.Controls.Add(Me.Txt_Result1)
-        Me.Grp_Conta1.Location = New System.Drawing.Point(12, 37)
+        Me.Grp_Conta1.Location = New System.Drawing.Point(12, 27)
         Me.Grp_Conta1.Name = "Grp_Conta1"
-        Me.Grp_Conta1.Size = New System.Drawing.Size(459, 351)
+        Me.Grp_Conta1.Size = New System.Drawing.Size(459, 372)
         Me.Grp_Conta1.TabIndex = 13
         Me.Grp_Conta1.TabStop = False
         Me.Grp_Conta1.Text = "GroupBox1"
         '
+        'Btn_Transfer1
+        '
+        Me.Btn_Transfer1.Location = New System.Drawing.Point(19, 211)
+        Me.Btn_Transfer1.Name = "Btn_Transfer1"
+        Me.Btn_Transfer1.Size = New System.Drawing.Size(142, 23)
+        Me.Btn_Transfer1.TabIndex = 13
+        Me.Btn_Transfer1.Text = "Button1"
+        Me.Btn_Transfer1.UseVisualStyleBackColor = True
+        '
         'Grp_Conta2
         '
+        Me.Grp_Conta2.Controls.Add(Me.Btn_Transfer2)
         Me.Grp_Conta2.Controls.Add(Me.Txt_Extract2)
         Me.Grp_Conta2.Controls.Add(Me.Txt_value2)
         Me.Grp_Conta2.Controls.Add(Me.Btn_Deposit2)
@@ -197,12 +210,21 @@ Partial Class Frm_Main02
         Me.Grp_Conta2.Controls.Add(Me.Lbl_Money2)
         Me.Grp_Conta2.Controls.Add(Me.Lbl_Result2)
         Me.Grp_Conta2.Controls.Add(Me.Txt_Result2)
-        Me.Grp_Conta2.Location = New System.Drawing.Point(541, 37)
+        Me.Grp_Conta2.Location = New System.Drawing.Point(544, 27)
         Me.Grp_Conta2.Name = "Grp_Conta2"
-        Me.Grp_Conta2.Size = New System.Drawing.Size(459, 351)
+        Me.Grp_Conta2.Size = New System.Drawing.Size(459, 372)
         Me.Grp_Conta2.TabIndex = 14
         Me.Grp_Conta2.TabStop = False
         Me.Grp_Conta2.Text = "GroupBox1"
+        '
+        'Btn_Transfer2
+        '
+        Me.Btn_Transfer2.Location = New System.Drawing.Point(19, 211)
+        Me.Btn_Transfer2.Name = "Btn_Transfer2"
+        Me.Btn_Transfer2.Size = New System.Drawing.Size(142, 23)
+        Me.Btn_Transfer2.TabIndex = 14
+        Me.Btn_Transfer2.Text = "Button1"
+        Me.Btn_Transfer2.UseVisualStyleBackColor = True
         '
         'Txt_Extract2
         '
@@ -215,14 +237,14 @@ Partial Class Frm_Main02
         '
         'Txt_value2
         '
-        Me.Txt_value2.Location = New System.Drawing.Point(19, 141)
+        Me.Txt_value2.Location = New System.Drawing.Point(19, 124)
         Me.Txt_value2.Name = "Txt_value2"
         Me.Txt_value2.Size = New System.Drawing.Size(142, 23)
         Me.Txt_value2.TabIndex = 1
         '
         'Btn_Deposit2
         '
-        Me.Btn_Deposit2.Location = New System.Drawing.Point(19, 199)
+        Me.Btn_Deposit2.Location = New System.Drawing.Point(19, 182)
         Me.Btn_Deposit2.Name = "Btn_Deposit2"
         Me.Btn_Deposit2.Size = New System.Drawing.Size(142, 23)
         Me.Btn_Deposit2.TabIndex = 11
@@ -232,7 +254,7 @@ Partial Class Frm_Main02
         'Lbl_Value2
         '
         Me.Lbl_Value2.AutoSize = True
-        Me.Lbl_Value2.Location = New System.Drawing.Point(19, 123)
+        Me.Lbl_Value2.Location = New System.Drawing.Point(19, 106)
         Me.Lbl_Value2.Name = "Lbl_Value2"
         Me.Lbl_Value2.Size = New System.Drawing.Size(41, 15)
         Me.Lbl_Value2.TabIndex = 2
@@ -249,7 +271,7 @@ Partial Class Frm_Main02
         '
         'Btn_GetMoney2
         '
-        Me.Btn_GetMoney2.Location = New System.Drawing.Point(19, 170)
+        Me.Btn_GetMoney2.Location = New System.Drawing.Point(19, 153)
         Me.Btn_GetMoney2.Name = "Btn_GetMoney2"
         Me.Btn_GetMoney2.Size = New System.Drawing.Size(142, 23)
         Me.Btn_GetMoney2.TabIndex = 3
@@ -351,4 +373,6 @@ Partial Class Frm_Main02
     Friend WithEvents Lbl_Money2 As Label
     Friend WithEvents Lbl_Result2 As Label
     Friend WithEvents Txt_Result2 As TextBox
+    Friend WithEvents Btn_Transfer1 As Button
+    Friend WithEvents Btn_Transfer2 As Button
 End Class

@@ -17,4 +17,8 @@
     Public Sub deposit(depositMoney As Double)
         money += depositMoney
     End Sub
+
+    Public Function transfer(valueTransfer As Double, contaDestiny As ContaCorrente) As Boolean
+
+    End Function
 End Class
