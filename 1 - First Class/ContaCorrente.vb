@@ -5,7 +5,7 @@
     Public money As Double
     Public extract As String = ""
 
-    Public Function sacar(moneyGet As Double) As Boolean
+    Public Function Sacar(moneyGet As Double) As Boolean
         If money < moneyGet Then
             Return False
         Else
@@ -14,11 +14,17 @@
         End If
     End Function
 
-    Public Sub deposit(depositMoney As Double)
+    Public Sub Deposit(depositMoney As Double)
         money += depositMoney
     End Sub
 
-    Public Function transfer(valueTransfer As Double, contaDestiny As ContaCorrente) As Boolean
-
+    Public Function Transfer(valueTransfer As Double, ByRef contaDestiny As ContaCorrente) As Boolean
+        If money < valueTransfer Then
+            Return False
+        Else
+            money -= valueTransfer
+            contaDestiny.Deposit(valueTransfer)
+            Return True
+        End If
     End Function
 End Class
